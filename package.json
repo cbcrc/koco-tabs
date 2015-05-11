@@ -1,0 +1,19 @@
+{
+  "name": "koco-tabs",
+  "version": "0.1.0",
+  "description": "Tabs component for koco projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cbcrc/koco-tabs"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cbcrc/koco-tabs/issues"
+  },
+  "homepage": "https://github.com/cbcrc/koco-tabs"
+}
