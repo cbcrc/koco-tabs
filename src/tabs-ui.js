@@ -1,5 +1,5 @@
-define(['text!./tabs.html', 'knockout', 'jquery'],
-    function(template, ko, $) {
+define(['knockout', 'jquery'],
+    function(ko, $) {
         'use strict';
 
         var TabsViewModel = function(settings, componentInfo) {
@@ -25,12 +25,5 @@ define(['text!./tabs.html', 'knockout', 'jquery'],
             });
         }
 
-        return {
-            viewModel: {
-                createViewModel: function(settings, componentInfo) {
-                    return new TabsViewModel(settings, componentInfo);
-                }
-            },
-            template: template
-        };
+        return TabsViewModel;
     });

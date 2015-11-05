@@ -1,6 +1,6 @@
 {
   "name": "koco-tabs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Tabs component for koco projects",
   "main": "index.js",
   "scripts": {
