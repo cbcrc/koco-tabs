@@ -1,0 +1,186 @@
+/*TODO: Utiliser les varaibles de bootstrap au lei de valeur fixes. exemple: pour les couleur de succes, warning, etc*/
+
+tabs {
+    > ul {
+        border: 0 !important;
+        margin-top: 20px !important;
+        margin-bottom: 40px !important;
+        overflow: hidden !important;
+        > li {
+            width: 32% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            display: list-item !important;
+            position: static;
+            > a {
+                position: relative !important;
+                color: #555 !important;
+                font-size: 14px !important;
+                font-weight: bold !important;
+                padding: 8px 12px 8px 30px !important;
+                line-height: 30px !important;
+                -webkit-border-radius: 0 !important;
+                -moz-border-radius: 0 !important;
+                border-radius: 0 !important;
+                border: 0 !important;
+                background-color: #f1f1f1 !important;
+                > i {
+                    font-size: 18px !important;
+                    vertical-align: middle !important;
+                    line-height: 26px !important;
+                }
+            }
+            > a:hover {
+                color: #111 !important;
+                background-color: #49afce !important;
+            }
+            > a:after {
+                content: " " !important;
+                display: block !important;
+                width: 0 !important;
+                height: 0 !important;
+                border-top: 30px solid transparent !important;
+                border-bottom: 30px solid transparent !important;
+                border-left: 20px solid #f1f1f1 !important;
+                position: absolute !important;
+                top: 50% !important;
+                margin-top: -30px !important;
+                left: 100% !important;
+                z-index: 2 !important;
+            }
+            > a:before {
+                content: " " !important;
+                display: block !important;
+                width: 0 !important;
+                height: 0 !important;
+                border-top: 30px solid transparent !important;
+                border-bottom: 30px solid transparent !important;
+                border-left: 20px solid white !important;
+                position: absolute !important;
+                top: 50% !important;
+                margin-top: -30px !important;
+                margin-left: 5px !important;
+                left: 100% !important;
+                z-index: 1 !important;
+            }
+            > a.text-success, a.text-success:hover {
+                color: #468847 !important;
+            }
+            > a.text-warning, a.text-warning:hover {
+                color: #C09853 !important;
+            }
+            > a.text-error, a.text-error:hover {
+                color: #B94A48 !important;
+            }
+            > a:hover:after {
+                border-left-color: #49afce !important;
+            }
+        }
+        > li.active {
+            > a {
+                color: #111 !important;
+                background-color: #49afce !important;
+            }
+            > a:hover {
+                border: 0 !important;
+                cursor: default !important;
+            }
+            > a:after {
+                border-left-color: #49afce !important;
+            }
+        }
+        > li.disabled {
+            > a, a:hover {
+                color: #ddd !important;
+                background-color: #f1f1f1 !important;
+            }
+            > a:hover:after {
+                border-left-color: #f1f1f1 !important;
+            }
+        }
+        @media (max-width: 767px) {
+            > li {
+                width: 100% !important;
+            }
+        }
+    }
+    > ul:after {
+        line-height: 0px !important;
+    }
+    .tab-switchers {
+        margin-top: 40px;
+    }
+    tab-switcher {
+        height: 50px;
+        a {
+            float: left;
+            position: relative;
+            display: block;
+            color: #555;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            padding: 5px;
+            line-height: 24px;
+            width: 150px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            border: 0;
+            background-color: #f1f1f1;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #111;
+            background-color: #49afce;
+            text-decoration: none;
+        }
+    }
+    tab-switcher.next {
+        .pull-right;
+        a {
+            margin-left: 10px;
+            margin-right: 20px;
+        }
+        a:after {
+            content: " ";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 17px solid transparent;
+            border-bottom: 17px solid transparent;
+            border-left: 20px solid #f1f1f1;
+            position: absolute;
+            top: 50%;
+            margin-top: -17px;
+            left: 100%;
+            z-index: 2;
+        }
+        a:hover:after {
+            border-left-color: #49afce;
+        }
+    }
+    tab-switcher.previous {
+        .pull-left;
+        a:before {
+            content: " ";
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 17px solid transparent;
+            border-bottom: 17px solid transparent;
+            border-right: 20px solid #f1f1f1;
+            position: absolute;
+            top: 50%;
+            margin-top: -17px;
+            right: 100%;
+            z-index: 2;
+        }
+        a {
+            margin-left: 20px;
+        }
+        a:hover:before {
+            border-right-color: #49afce;
+        }
+    }
+}
