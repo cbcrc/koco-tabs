@@ -1,1 +1,6 @@
+<!-- ko if: $data.translate -->
+<a data-bind="attr:{ href: '#' + target, 'aria-controls': target }, translatedText: title" data-toggle="tab" role="tab"></a>
+<!--/ko-->
+<!-- ko ifnot: $data.translate -->
 <a data-bind="attr:{ href: '#' + target, 'aria-controls': target }, html: title" data-toggle="tab" role="tab"></a>
+<!--/ko-->
